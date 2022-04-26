@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMDB</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <span>
+            Buscador de Filmes
+        </span>
+    </header>
+
+    <main>
+        <div class="search">
+            <h2>Pesquisar por filme</h2>
+            <input 
+                type="text"
+                id="searchInput"
+                name="searchInput"
+                placeholder="Nome do filme"
+                value="Nárnia"
+            />
+            <button class="button" id="searchButton">
+                Pesquisar
+            </button>
+            <button class="button" id="clearButton">
+                Limpar
+            </button>
+            <span class="result-title" id="result_title" style="display: none;">
+                Resultados<span id="searchNumbers"></span>:
+            </span>
+
+            <ul class="results" id="results_save">
+                
+            </ul>
+        </div>
+        
+        <div class="search">
+            <h2>
+                Filmes Salvos
+            </h2>
+
+            <ul class="results" id="results_save">
+
+            </ul>
+        </div>
+    </main>
+
+    <script src="./assets/JS/main.js"></script>
+</body>
+</html>
